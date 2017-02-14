@@ -2,7 +2,14 @@
 
 Página para apresentar os códigos do componente curricular ECT2203 - Lógica de Programação.
 
+## Aulas Teóricas 
+
 * [Introdução a Algoritmos](https://github.com/orivaldosantana/ECT2203LoP/tree/master/aula2)
+
+## Aulas Práticas 
+
+* [Laboratório 0](https://github.com/orivaldosantana/ECT2203LoP/tree/master/lab0)
+
 
 # Referências
 
