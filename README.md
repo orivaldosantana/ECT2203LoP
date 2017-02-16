@@ -21,8 +21,9 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 * Jogos para os programadores de amanhã <https://blockly-games.appspot.com/>  
 * Jogos do site [hora do código](code.org):
  * https://hourofcode.com/code
+ * https://code.org/minecraft
  * https://hourofcode.com/mchoc
- * https://hourofcode.com/silent 
+ * https://hourofcode.com/silent
 
 
 ## Referências
