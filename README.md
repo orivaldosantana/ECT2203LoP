@@ -32,6 +32,7 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 
 * Editor de códigos Atom, <https://atom.io/>
 * Editor de códigos Sublime, <https://www.sublimetext.com>
+* Editor de códigos Geany, <https://www.geany.org/Download/Releases> 
 * Editor integrado ao navegador firefox, <https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction#Scratchpad>
 
 ### Online  
