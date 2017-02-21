@@ -9,6 +9,7 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 ## Aulas Práticas
 
 * [Laboratório 0](https://github.com/orivaldosantana/ECT2203LoP/tree/master/lab0)
+* [Laboratório 1](https://github.com/orivaldosantana/ECT2203LoP/tree/master/lab1)
 
 ## Vídeos Motivacionais
 
