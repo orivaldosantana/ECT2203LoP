@@ -10,4 +10,13 @@ function lerInteiro(x) {
 function lerReal(x) {
 	return parseFloat(prompt(x));
 }
+function raizQuadrada(x){
+	return Math.sqrt(x);
+}
+function potencia(b,e){
+	return Math.pow(b,e); 
+}
+function divisaoInteira(x,y) {
+	return Math.floor(x/y);
+}
 
