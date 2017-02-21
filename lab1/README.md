@@ -15,4 +15,6 @@
 
 * [Q11] Escreva um programa que recebe um número inteiro de horas e imprime o número equivalente em dias. Faça com que o programa apresente a parte fracionária em horas. Ex.: 60 horas = 2 dias e 12 horas. Dicas:
  * Use o operador “%” (resto da divisão);
- * Use a função  _divisaoInteira(dividendo,divisor)_. 
+ * Use a função  _divisaoInteira(dividendo,divisor)_.
+
+ Observação: Utilize o código do link a seguir como base: <https://github.com/orivaldosantana/ECT2203LoP/raw/master/lab0/codigo_base.zip>
