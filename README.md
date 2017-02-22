@@ -17,7 +17,7 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 
 * Vídeo de code.org, <https://youtu.be/nKIu9yen5nc>
 
-# Atividades Introdutórias a Lógica de Programação
+## Atividades Introdutórias a Lógica de Programação
 
 * Jogos para os programadores de amanhã <https://blockly-games.appspot.com/>  
 * Jogos do site [hora do código](code.org):
