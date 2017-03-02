@@ -49,4 +49,8 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 
 ### Processing
 
-* Referências para as funções do processing em javascript, <https://p5js.org/reference/>
+* Referências para as funções do processing em javascript, <https://p5js.org/reference/> 
+
+## Dicas
+
+* Como resolver o problema de incompatibilidade de acentos em páginas HTML, <https://wiki.locaweb.com.br/pt-br/Como_resolver_problemas_de_acentua%C3%A7%C3%B5es_em_seu_site> 
