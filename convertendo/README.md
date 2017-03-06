@@ -55,6 +55,7 @@ Dica, você pode concatenar (juntar) textos, textos e números com o operador +
 * Multiplicação de a vezes b: `a * b`
 * Divisão de a por b: `a / b`
 * Divisão inteira de a por b: `divisaoInteira(a,b)` ou `Math.floor(a/b)`
+* Resto da divisão de a por b: `a % b`
 * Portência, base elevado ao expoente: `potencia(base,expoente)` ou `Math.pow(base,expoente)`
 * Raiz quadrada de x: `raizQuadrada(x)` ou `Math.sqrt(x)`
 
