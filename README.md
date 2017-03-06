@@ -5,11 +5,17 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 ## Aulas Teóricas
 
 * [Introdução a Algoritmos](https://github.com/orivaldosantana/ECT2203LoP/tree/master/aula2)
+* [Expressões, variáveis, tipos de dados e entrada e saída](https://github.com/orivaldosantana/ECT2203LoP/tree/master/parte3)
 
 ## Aulas Práticas
 
-* [Laboratório 0](https://github.com/orivaldosantana/ECT2203LoP/tree/master/lab0)
-* [Laboratório 1](https://github.com/orivaldosantana/ECT2203LoP/tree/master/lab1)
+* [Intordução às Ferramentas](https://github.com/orivaldosantana/ECT2203LoP/tree/master/lab0)
+* [Expressões, variáveis, tipos de dados e entrada e saída](https://github.com/orivaldosantana/ECT2203LoP/tree/master/lab1)
+
+## Convertendo
+
+O link a seguir apresenta uma página explicando como converter para JavaScript os principais comandos vistos em sala de aula: [Convertendo Para JavaScript](https://github.com/orivaldosantana/ECT2203LoP/tree/master/convertendo)
+
 
 ## Vídeos Motivacionais
 
@@ -33,7 +39,7 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 
 * Editor de códigos Atom, <https://atom.io/>
 * Editor de códigos Sublime, <https://www.sublimetext.com>
-* Editor de códigos Geany, <https://www.geany.org/Download/Releases> 
+* Editor de códigos Geany, <https://www.geany.org/Download/Releases>
 * Editor integrado ao navegador firefox, <https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction#Scratchpad>
 
 ### Online  
