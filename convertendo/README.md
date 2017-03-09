@@ -1,6 +1,6 @@
-# Algoritmos para JavaScript
+# JavaScript
 
-Esta página trata da conversão dos algoritmos vistos em aula para a linguagem JavaScript. Logo, para cada instrução de um algoritmo será apresentada seu equilavente em JavaScript.
+Esta página trata da conversão das instruções de algoritmos vistos em aula para a linguagem JavaScript. Logo, para cada instrução de um algoritmo será apresentada seu equilavente em JavaScript.
 
 ## Comandos de Entrada
 
