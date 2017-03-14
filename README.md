@@ -11,7 +11,7 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 
 * [Intordução às Ferramentas](https://github.com/orivaldosantana/ECT2203LoP/tree/master/lab0)
 * [Expressões, variáveis, tipos de dados e entrada e saída](https://github.com/orivaldosantana/ECT2203LoP/tree/master/lab1)
-* [Estruturas condicionais](Estruturas condicionais)
+* [Estruturas condicionais](lab2/README.md)
 
 ## Convertendo
 
@@ -45,6 +45,7 @@ O link a seguir apresenta uma página explicando como converter para JavaScript 
 
 ### Online  
 
+* Editor Js Bin, <https://jsbin.com/>
 * Editor de códigos JS, <https://js.do>
 * Editor de códigos Repl, <https://repl.it/languages/javascript>
 
