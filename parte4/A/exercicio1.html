@@ -1,7 +1,8 @@
 <script src="ect.js"></script>
 <script>
-	/* 
 	
+		
+	/* 
 	entre com as faltas 
 	se falta maior que 25 %  
 		escreva "Reprovado" 
@@ -25,7 +26,36 @@
 		senão 
 			escreva "Reprovado" 
 	*/
-
+	
+	faltas = lerReal("Entre com o número de faltas:"); 
+	if (faltas > 90/4) {
+		escreva("Reprovado por falta"); 
+	}
+	else {
+		nota1 = lerReal("Entre com a nota 1:"); 
+		nota2 = lerReal("Entre com a nota 2:"); 
+		media = (nota1 + nota2)/2; 
+		if (media >= 3) { // [3,5[ 
+			if (media < 5) {
+				reposicao = lerReal("Entre com nota de reposição: "); 
+				if ( nota1 < nota2 ){
+					nota1 = reposicao; 
+				}
+				else {
+					nota2 = reposicao; 
+				}
+				media = (nota1 + nota2)/2; 
+			}
+		}
+		if (media >= 5) {
+			escreva("Aprovado");
+		}
+		else {
+			escreva("Reprovado"); 
+		}
+	}
+ 
+	
 </script>
 
 
