@@ -6,6 +6,7 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 
 * [Introdução a Algoritmos](https://github.com/orivaldosantana/ECT2203LoP/tree/master/aula2)
 * [Expressões, variáveis, tipos de dados e entrada e saída](https://github.com/orivaldosantana/ECT2203LoP/tree/master/parte3)
+* [Estrutura Condicional Parte I](parte4/A)
 
 ## Aulas Práticas
 
