@@ -59,6 +59,24 @@ Dica, você pode concatenar (juntar) textos, textos e números com o operador +
 * Portência, base elevado ao expoente: `potencia(base,expoente)` ou `Math.pow(base,expoente)`
 * Raiz quadrada de x: `raizQuadrada(x)` ou `Math.sqrt(x)`
 
+
+## Operadores Lógicos
+
+* Função lógica OU de a e b: `a || b`
+* Função lógica E de a e b: `a && b`
+* Função lógica de NEGAÇÂO de a: ` ! a`
+
+## Estruturas Condicionais 
+
+### Estrutura Condicional Simples 
+
+Se **expresão lógica** for verdadeira então execute os **comandos**
+```JavaScript
+if ( expressão ) {
+  // comandos 
+}
+```
+
 ## Aviso Imporatante
 
 As funções `divisaoInteira`, `potencia`, `raizQuadrada`, `lerInteiro`, `lerReal`, `lerTexto` e `escreva` só funcionarão se o arquivo .html possuir a chamada para o aquivo _ect.js_. Note que o arquivo _ect.js_ deve estar na mesma pasta que o seu arquivo html contendo o seu código em JavaScript.
