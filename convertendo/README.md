@@ -76,6 +76,17 @@ if ( expressão ) {
   // comandos 
 }
 ```
+### Estrutura Condicional Composta
+
+*Se* **expresão lógica** for verdadeira então execute os **comandos**, *caso contrário* execute **outros comandos** 
+```JavaScript
+if ( expressão ) {
+  // comandos 
+}
+else {
+  // outros comandos 
+}
+``` 
 
 ## Aviso Imporatante
 
