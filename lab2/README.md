@@ -13,4 +13,16 @@ de 400.
 
 * [Q12] Implemente um programa que calcule o Índice de Massa Corporal (IMC) de uma pessoa e indique sua classificação de peso. A relação entre IMC e classificação é dado na tabela abaixo:
 
+| IMC           | Classificação |
+|:-------------:|:-------------:|
+| Mnor que 18.5 |Abaixo do peso|
+|Entre 18.5 e 24.9|Peso normal |
+|Entre 25,0 e 29.9|Sobrepeso   |
+|Igual ou maior que 30|Obesidade |
+
+
+
+
+
+
  Observação: Utilize o código do link a seguir como base: <https://github.com/orivaldosantana/ECT2203LoP/raw/master/lab0/codigo_base.zip>
