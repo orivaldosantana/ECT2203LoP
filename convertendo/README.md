@@ -89,7 +89,7 @@ else {
 ``` 
 ## Estruturas de Repetição 
 
-### Laço **while**
+### Laço *while*
 
 * *Enquanto* **expressão lógica** for verdeira execute os **comandos**. 
 ```JavaScript
@@ -98,7 +98,7 @@ while ( expressão ) {
 }
 ```
 
-### Laço **do while 
+### Laço *do while* 
 
 * Execute os **comandos**, *Enquanto* **expressão lógica** for verdeira. 
 ```JavaScript
