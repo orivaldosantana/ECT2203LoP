@@ -87,6 +87,26 @@ else {
   // outros comandos 
 }
 ``` 
+## Estruturas de Repetição 
+
+### Laço **while**
+
+* *Enquanto* **expressão lógica** for verdeira execute os **comandos**. 
+```JavaScript
+while ( expressão ) {
+  // comandos 
+}
+```
+
+### Laço **do while 
+
+* Execute os **comandos**, *Enquanto* **expressão lógica** for verdeira. 
+```JavaScript
+do { 
+  // comandos 
+} while ( expressão ); 
+```
+
 
 ## Aviso Imporatante
 
