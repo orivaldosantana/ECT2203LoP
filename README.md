@@ -14,6 +14,7 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 * [Intordução às Ferramentas](https://github.com/orivaldosantana/ECT2203LoP/tree/master/lab0)
 * [Expressões, variáveis, tipos de dados e entrada e saída](https://github.com/orivaldosantana/ECT2203LoP/tree/master/lab1)
 * [Estruturas condicionais](lab2/README.md)
+* [Estruturas de repetição condicionais](lab3/README.md)
 
 ## Convertendo
 
