@@ -11,8 +11,8 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 * [Estrutura Condicional, Parte III](parte4/C)
 * [Estrutura Condicional - Exercícios, Parte IV](parte4/D)
 * [Repetição Condicional, Parte I](parte5/A)
-* [Repetição Condicional, Aplicações Parte II](parte5/B)
-* [Repetição Condicional, Aplicações Parte III](parte5/C)
+* [Repetição Condicional - Aplicações, Parte II](parte5/B)
+* [Repetição Condicional - Aplicações, Parte III](parte5/C)
 
 ## Aulas Práticas
 
