@@ -25,6 +25,11 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 
 O link a seguir apresenta uma página explicando como converter para JavaScript os principais comandos vistos em sala de aula: [Convertendo Para JavaScript](https://github.com/orivaldosantana/ECT2203LoP/tree/master/convertendo)
 
+## Tutorial sobre Processing com JavaScript
+
+Tutorial demonstrando como usar as principais funções relacionadas ao trabalho prático. 
+
+[Clique aqui.](tutorial) 
 
 ## Vídeos Motivacionais
 
