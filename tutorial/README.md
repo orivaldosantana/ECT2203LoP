@@ -34,9 +34,13 @@ function draw() {
 ```
 Salve este arquivo como *Jogo.js* (mesmo nomo usado dentro do arquivo HTML). 
 
-O resultado da execução será: 
+O resultado da execução do arquivo index.html será: 
 
 ![Elipse](codigos/figuras/elipse.png)
+
+Para mais informações veja: 
+
+* https://p5js.org/reference/#/p5/ellipse 
 
 ## Passo 3: Desenhando formas geométricas 
 
