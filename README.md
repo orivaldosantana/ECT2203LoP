@@ -27,9 +27,9 @@ O link a seguir apresenta uma página explicando como converter para JavaScript 
 
 ## Tutorial sobre Processing com JavaScript
 
-Tutorial demonstrando como usar as principais funções relacionadas ao trabalho prático. 
+Tutorial demonstrando como usar as principais funções relacionadas ao trabalho prático da Unidade III. 
 
-[Clique aqui.](tutorial) 
+* [Clique aqui.](tutorial) 
 
 ## Vídeos Motivacionais
 
