@@ -67,6 +67,9 @@ function draw() {
   line(100, 300, 400, 400);
 }
 ```
+
+![Elipse](codigos/figuras/figura1.png)
+
 A função createCanvas() define o tamanho da tela e o background() define sua cor de fundo. As funções fill() e stroke(), definem as cores de preenchimento e de contorno, respectivamente. Uma vez utilizadas essas funções, seus efeitos valerão para todas as formas declaradas abaixo. noFill() e noStroke(), retiram o preenchimento e o contorno, respectivamente, e strokeWeight() define uma espessura para o contorno da forma.
   
 Agora vejamos algo mais interessante...
