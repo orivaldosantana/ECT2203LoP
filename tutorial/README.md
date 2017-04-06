@@ -22,7 +22,7 @@ Ela servirá como meio de acesso ao seu arquivo de script, salve-a como "index.h
 
 ## Passo 2: Criando uma arquivo de código JavaScript 
 
-Em seguida, abra o editor de sua preferência e digite o seguinte:
+Abra o editor de sua preferência e digite o seguinte:
 ``` javascript
 function setup() {
 
@@ -32,6 +32,11 @@ function draw() {
   ellipse(50, 50, 80, 80);
 }
 ```
+Salve este arquivo como *Jogo.js* (mesmo nomo usado dentro do arquivo HTML). 
+
+O resultado da execução será: 
+
+![Elipse](codigos/figuras/elipse.png)
 
 ## Passo 3: Desenhando formas geométricas 
 
