@@ -184,7 +184,7 @@ function draw() {
   ellipse(x, y, 50, 50);
 }
 ```
-Neste código, utilizamos entradas do teclado para alterar os valores das variáveis criadas. Isso é feito atravéz da função keyIsDown(), que retorna true sempre que uma tecla com o mesmo código que foi passado como parâmetro na função estiver sendo pressionada, e false caso contrário. Você poderá usar o número que representa a tecla ou o próprio nome reservado para ela como: BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW. Para saber o número que representa qualquer tecla, veja: * http://keycode.info/. Para mais informações sobre a função keyIsDown(), veja: * https://p5js.org/reference/#/p5/keyIsDown.
+Neste código, utilizamos entradas do teclado para alterar os valores das variáveis criadas. Isso é feito atravéz da função keyIsDown(), que retorna true sempre que uma tecla com o mesmo código que foi passado como parâmetro na função estiver sendo pressionada, e false caso contrário. Você poderá usar o número que representa a tecla ou o próprio nome reservado para ela como: BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW. Para saber o número que representa qualquer tecla, veja: http://keycode.info/. Para mais informações sobre a função keyIsDown(), veja: https://p5js.org/reference/#/p5/keyIsDown.
 
 Por enquanto, pode parecer que não fizemos algo muito interessante, mas essa é só uma base para que você possa criar coisas incríveis. Para isso, basta praticar os conceitos aqui mostrados e juntar-los ao que vocè aprender em suas pesquisas futuras. Um ótimo lugar para expandir seu conhecimento sobre esse assunto é o próprio site do Processing. Divirta-se!
 
