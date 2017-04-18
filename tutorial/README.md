@@ -73,6 +73,16 @@ Resultado da execução:
 
 A função createCanvas() define o tamanho da tela e o background() define sua cor de fundo. As funções fill() e stroke(), definem as cores de preenchimento e de contorno, respectivamente. Uma vez utilizadas essas funções, seus efeitos valerão para todas as formas declaradas abaixo. noFill() e noStroke(), retiram o preenchimento e o contorno, respectivamente, e strokeWeight() define uma espessura para o contorno da forma.
   
+ Veja:
+ 
+ * https://p5js.org/reference/#/p5/rect
+ * https://p5js.org/reference/#/p5/line
+ * https://p5js.org/reference/#/p5/fill
+ * https://p5js.org/reference/#/p5/noFill
+ * https://p5js.org/reference/#/p5/stroke
+ * https://p5js.org/reference/#/p5/noStroke
+ * https://p5js.org/reference/#/p5/createCanvas
+  
 Agora vejamos algo mais interessante...
 
 Primeiro teremos que saber o que são as funções setup() e draw(), que viemos utilizando aqui. Elas são usadas basicamente para organizar o fluxo do código. O setup(), é executado apenas uma vez, no começo, para declarações iniciais. Já o draw(), ficará se repetindo no decorrer da execução, nele poderemos fazer algo mudar seu valor ao longo do tempo. Um exemplo é a posição da ellipse, que pode ser alterada de acordo com a posiço do mouse!
