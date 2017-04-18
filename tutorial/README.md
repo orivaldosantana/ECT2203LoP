@@ -87,6 +87,11 @@ Agora vejamos algo mais interessante...
 
 Primeiro teremos que saber o que são as funções setup() e draw(), que viemos utilizando aqui. Elas são usadas basicamente para organizar o fluxo do código. O setup(), é executado apenas uma vez, no começo, para declarações iniciais. Já o draw(), ficará se repetindo no decorrer da execução, nele poderemos fazer algo mudar seu valor ao longo do tempo. Um exemplo é a posição da ellipse, que pode ser alterada de acordo com a posiço do mouse!
 
+Veja:
+
+* https://p5js.org/reference/#/p5/setup
+* https://p5js.org/reference/#/p5/draw
+
 Delete o script anterior e digite o seguinte: 
 
 ``` javascript
@@ -104,6 +109,11 @@ Resultado da execução:
 ![Elipse](codigos/figuras/figura2.png)
 
 Os parâmetros mouseY e mouseX, funcionam como variáveis que armazenam os valores da posição do mouse.
+
+Veja:
+
+* https://p5js.org/reference/#/p5/mouseX
+* https://p5js.org/reference/#/p5/mouseY
 
 Agora vamos implementar um pouco esse código.
 
@@ -125,6 +135,10 @@ function draw() {
 
 A variável mouseIsPressed é uma boleana, nela é armazenado true para o caso de o botão do mouse estar sendo pressionado e false para o caso do botão estar solto.
 
+Veja: 
+
+* https://p5js.org/reference/#/p5/mouseIsPressed
+
 A função random(min, max) também pode ser muito útil para diversas aplicações.
 	
 ``` javascript
@@ -142,6 +156,10 @@ function draw() {
 ```
 
 ![Elipse](codigos/figuras/figura3.png)
+
+Veja:
+
+* https://p5js.org/reference/#/p5/random
 
 Também podemos criar nossas próprias variáveis.
 
@@ -194,7 +212,11 @@ function draw() {
   ellipse(x, y, 50, 50);
 }
 ```
-Neste código, utilizamos entradas do teclado para alterar os valores das variáveis criadas. Isso é feito atravéz da função keyIsDown(), que retorna true sempre que uma tecla com o mesmo código que foi passado como parâmetro na função estiver sendo pressionada, e false caso contrário. Você poderá usar o número que representa a tecla ou o próprio nome reservado para ela como: BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW. Para saber o número que representa qualquer tecla, veja: http://keycode.info/. Para mais informações sobre a função keyIsDown(), veja: https://p5js.org/reference/#/p5/keyIsDown.
+Neste código, utilizamos entradas do teclado para alterar os valores das variáveis criadas. Isso é feito atravéz da função keyIsDown(), que retorna true sempre que uma tecla com o mesmo código que foi passado como parâmetro na função estiver sendo pressionada, e false caso contrário. Você poderá usar o número que representa a tecla ou o próprio nome reservado para ela como: BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW. Para saber o número que representa qualquer tecla, veja: http://keycode.info/. 
+
+Veja: 
+
+* https://p5js.org/reference/#/p5/keyIsDown.
 
 Por enquanto, pode parecer que não fizemos algo muito interessante, mas essa é só uma base para que você possa criar coisas incríveis. Para isso, basta praticar os conceitos aqui mostrados e juntar-los ao que vocè aprender em suas pesquisas futuras. Um ótimo lugar para expandir seu conhecimento sobre esse assunto é o próprio site do Processing. Divirta-se!
 
