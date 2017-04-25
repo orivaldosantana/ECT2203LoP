@@ -42,6 +42,8 @@ Para mais informações veja:
 
 * https://p5js.org/reference/#/p5/ellipse 
 
+Um exemplo de código funcionando com processing web (p5.js) pode ser baixado em: https://github.com/orivaldosantana/ECT2203LoP/blob/master/lab0/lab_processing_intro.zip 
+
 ## Passo 3: Desenhando formas geométricas 
 
 O processing tem diversas funções para desenho de formas, tais como `ellipse()`, `rect()`, `line()`, `point()`, `quad()`, `triangle()`... Todas elas precisam de informações como posição e tamanho, que são colocadas dentro dos parênteses.
