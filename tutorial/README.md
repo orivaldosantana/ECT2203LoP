@@ -73,9 +73,24 @@ Resultado da execução:
 
 A função createCanvas() define o tamanho da tela e o background() define sua cor de fundo. As funções fill() e stroke(), definem as cores de preenchimento e de contorno, respectivamente. Uma vez utilizadas essas funções, seus efeitos valerão para todas as formas declaradas abaixo. noFill() e noStroke(), retiram o preenchimento e o contorno, respectivamente, e strokeWeight() define uma espessura para o contorno da forma.
   
+ Veja:
+ 
+ * https://p5js.org/reference/#/p5/rect
+ * https://p5js.org/reference/#/p5/line
+ * https://p5js.org/reference/#/p5/fill
+ * https://p5js.org/reference/#/p5/noFill
+ * https://p5js.org/reference/#/p5/stroke
+ * https://p5js.org/reference/#/p5/noStroke
+ * https://p5js.org/reference/#/p5/createCanvas
+  
 Agora vejamos algo mais interessante...
 
 Primeiro teremos que saber o que são as funções setup() e draw(), que viemos utilizando aqui. Elas são usadas basicamente para organizar o fluxo do código. O setup(), é executado apenas uma vez, no começo, para declarações iniciais. Já o draw(), ficará se repetindo no decorrer da execução, nele poderemos fazer algo mudar seu valor ao longo do tempo. Um exemplo é a posição da ellipse, que pode ser alterada de acordo com a posiço do mouse!
+
+Veja:
+
+* https://p5js.org/reference/#/p5/setup
+* https://p5js.org/reference/#/p5/draw
 
 Delete o script anterior e digite o seguinte: 
 
@@ -95,6 +110,11 @@ Resultado da execução:
 
 Os parâmetros mouseY e mouseX, funcionam como variáveis que armazenam os valores da posição do mouse.
 
+Veja:
+
+* https://p5js.org/reference/#/p5/mouseX
+* https://p5js.org/reference/#/p5/mouseY
+
 Agora vamos implementar um pouco esse código.
 
 ``` javascript
@@ -111,7 +131,13 @@ function draw() {
 
 ```
 
+![Elipse](codigos/figuras/figura4.png)
+
 A variável mouseIsPressed é uma boleana, nela é armazenado true para o caso de o botão do mouse estar sendo pressionado e false para o caso do botão estar solto.
+
+Veja: 
+
+* https://p5js.org/reference/#/p5/mouseIsPressed
 
 A função random(min, max) também pode ser muito útil para diversas aplicações.
 	
@@ -128,6 +154,12 @@ function draw() {
 }
 
 ```
+
+![Elipse](codigos/figuras/figura3.png)
+
+Veja:
+
+* https://p5js.org/reference/#/p5/random
 
 Também podemos criar nossas próprias variáveis.
 
@@ -151,5 +183,42 @@ function draw() {
 }
 ```
 
+![Elipse](codigos/figuras/figura5.png) ![Elipse](codigos/figuras/figura6.png)
+
 Aqui, criamos as variáveis antes das funções, para que elas possam ser usadas em todos os lugares do código. No setup(), damos valores iniciais, visto que o setup só é executado uma única vez. No draw(), verificamos se a posição X do círculo está dentro do nosso canvas, se está verdadeiro, a variável da posição X é incrementada fazendo com que o círculo ande pela tela na horizontal, se ele sai do canvas, a posição X volta para zero (0) e o ciclo recomeça. O background está sendo repintado no draw() para evitar que o círculo deixe um rastro na tela; primeiro é pintado um fundo, depois o círculo é pintado em uma posição X, depois o fundo é pintado novamente e só então um novo círculo é pintado, em uma nova posição X. Experimente retirar a função background e veja o que acontece.
 
+```javascript
+var x = 100;
+var y = 100;
+
+function setup() {
+  createCanvas(512, 512);
+}
+
+function draw() {
+  background(0);
+  if (keyIsDown(LEFT_ARROW))
+    x-=5;
+
+  if (keyIsDown(RIGHT_ARROW))
+    x+=5;
+
+  if (keyIsDown(UP_ARROW))
+    y-=5;
+
+  if (keyIsDown(DOWN_ARROW))
+    y+=5;
+	
+  ellipse(x, y, 50, 50);
+}
+```
+Neste código, utilizamos entradas do teclado para alterar os valores das variáveis criadas. Isso é feito atravéz da função keyIsDown(), que retorna true sempre que uma tecla com o mesmo código que foi passado como parâmetro na função estiver sendo pressionada, e false caso contrário. Você poderá usar o número que representa a tecla ou o próprio nome reservado para ela como: BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW. Para saber o número que representa qualquer tecla, veja: http://keycode.info/. 
+
+Veja: 
+
+* https://p5js.org/reference/#/p5/keyIsDown.
+
+Por enquanto, pode parecer que não fizemos algo muito interessante, mas essa é só uma base para que você possa criar coisas incríveis. Para isso, basta praticar os conceitos aqui mostrados e juntar-los ao que vocè aprender em suas pesquisas futuras. Um ótimo lugar para expandir seu conhecimento sobre esse assunto é o próprio site do Processing. Divirta-se!
+
+Saiba mais em: 
+* https://p5js.org/
