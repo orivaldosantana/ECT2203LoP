@@ -21,6 +21,29 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 * [Estruturas condicionais](lab2/README.md)
 * [Estruturas de repetição condicionais](lab3/README.md)
 
+## Slides de Aula
+
+* 14/02/2017 - [Apresentação e planejamento](https://goo.gl/kxjSEQ)
+* 16/02/2017 - [Algortitmos e Lógica](https://goo.gl/sy6eGC)
+* 21/02/2017 - [Representações de Algoritmos](https://goo.gl/Ci29jy)
+* 23/02/2017 - [Expressões, variáveis, tipos de dados, e entrada e saída](https://goo.gl/4dYfps)
+* 02/03/2017 - [Exercícios: Expressões, variáveis, tipos de dados, e entrada e saída](https://goo.gl/qXUcH8)
+* 07/03/2017 - [Exercícios: Expressões, variáveis, tipos de dados, e entrada e saída](https://goo.gl/qXUcH8)
+* 09/03/2017 - [Estrutura Condicional Parte I](https://goo.gl/rRRrol)
+* 14/03/2017 - [Exercícios - Estrutura Condicional Parte II](https://goo.gl/iQdlGa)
+* 16/03/2017 - [Operadores Lógicos - Estrutura Condicional Parte III](https://goo.gl/vI592o)
+* 21/03/2017 - [Exercícios - Estrutura Condicional Parte IV](https://goo.gl/7egJPc)
+* 23/03/2017 - [Repetição Condicional I](https://goo.gl/bWt1iV)
+* 28/03/2017 - [Repetição Condicional, Exercícios](https://goo.gl/FXjkUs) 
+* 30/03/2017 - [Divulgação do Projeto](https://goo.gl/fIKTsr)
+* 04/04/2017 - [Repetição Condicional, Aplicações I](https://goo.gl/jcwriL)
+* 06/04/2017 - [Repetição Condicional, Aplicações II](https://goo.gl/lTrXDQ)
+* 11/04/2017 - Revisão 
+* 18/04/2017 - Prova I, escrita 
+* 20/04/2017 - Espectativa de resposta da Prova I
+* 25/04/2017 - [Laço Contado](https://goo.gl/Jnqz3c)
+
+
 ## Convertendo
 
 O link a seguir apresenta uma página explicando como converter para JavaScript os principais comandos vistos em sala de aula: [Convertendo Para JavaScript](https://github.com/orivaldosantana/ECT2203LoP/tree/master/convertendo)
