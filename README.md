@@ -42,6 +42,7 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 * 18/04/2017 - Prova I, escrita 
 * 20/04/2017 - Espectativa de resposta da Prova I
 * 25/04/2017 - [Laço Contado](https://goo.gl/Jnqz3c)
+* 27/04/2017 - [Laço contado,  Algoritmos Tradicionais](https://goo.gl/CVSzoM)
 
 
 ## Convertendo
