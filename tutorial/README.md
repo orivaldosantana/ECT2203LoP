@@ -273,7 +273,71 @@ Veja:
 
 * https://p5js.org/reference/#/p5/random
 
-Introduziremos agora o conceito de *variáveis de estado*. Utilizar variáveis de estado é muito útil para quando precisamos que algo aconteça no programa somente quando alguma outra ação estiver sendo realizada. Por exemplo, você só poderá fazer provas de C2 enquanto a *variável* "cursando C2" estiver ativada, uma vez que essa variável seja desligada você não poderá mais fazer provas de C2 a não ser que "cursando C2" seja ligada novamente ('-'). Para uma variável de estado utilizamos as variáveis boleanas, pois esta possui dois estado *true* e *false* que são usados para representar *ligado* e *desligado*.
+Introduziremos agora o conceito de *variáveis de estado*. Utilizar variáveis de estado é muito útil para quando precisamos que algo aconteça no programa somente quando alguma outra ação estiver sendo realizada. Por exemplo, você só poderá fazer provas de C2 enquanto a *variável* "cursando C2" estiver ativada, uma vez que essa variável seja desligada você não poderá mais fazer provas de C2 a não ser que "cursando C2" seja ligada novamente ('-'). Para criar uma variável de estado utilizamos as variáveis boleanas, pois estas possuem dois estados, *true* e *false*, que são usados para representar *ligado* e *desligado*.
+
+Vejamos um exemplo prático dessas variáveis de estado.
+
+```javascript
+var yo, xo;
+var naTela = true;
+function setup() {
+  createCanvas(512, 512);
+  yo = random(512); 
+  xo = 15;
+}
+
+function draw() {
+  background(0);
+  
+  if(naTela){
+    xo += 15;
+  }else{
+	yo = random(512); 
+    xo = 15;
+    naTela = true;
+  }
+  
+  if(xo > width) {
+	naTela = false;
+  }
+  
+  rect(xo,yo,40,40);
+}
+```
+
+Aqui, a variável boleana naTela funciona como variável de estado, pois observe que enquanto o retângulo permanecer dentro da área do canvas, naTela é verdadeira e o retângulo anda para a direita, uma vez que este saia da tela, naTela vira falso, o retângulo volta para o começo da tela. Em resumo, podemos ler que o retângulo andará quando naTela for verdadeiro e voltará para o começo da tela quando naTela for falso. Vejamos outro exemplo.
+
+```javascript
+var yo, xo;
+var podeMudar = true;
+function setup() {
+  createCanvas(512, 512);
+  yo = random(512); 
+  xo = 15;
+}
+
+function draw() {
+  background(0);
+  
+  if(!podeMudar){
+     xo += 15;
+  }
+  
+  if(xo > width){
+	podeMudar = true;
+  }
+  
+  if(mouseIsPressed && podeMudar) {
+      yo = random(512); 
+      xo = 15;
+    podeMudar = false;
+  }
+  
+  rect(xo,yo,40,40);
+}
+```
+
+Aqui a variável de estado é podeMudar. O programa funciona da seguinte forma: quando o mouse é clicado, uma posição é definida para o retângulo que logo então começará a andar para a direita, uma vez em movimento, o clique do mouse não conseguirá mais mudar sua posição até que ele saia da área do canvas. Assim, quando o retângulo estiver fora de vista, podeMudar é verdadeira e a posição poderá ser alterada com um clique do mouse, mas uma vez em movimento, até que o retângulo saia de vista novamente, podeMudar será falsa e o clique do mouse não funcionará. 
 
 Por enquanto, pode parecer que não fizemos algo muito interessante, mas essa é só uma base para que você possa criar coisas incríveis. Para isso, basta praticar os conceitos aqui mostrados e juntar-los ao que vocè aprender em suas pesquisas futuras. Um ótimo lugar para expandir seu conhecimento sobre esse assunto é o próprio site do Processing. Divirta-se!
 
