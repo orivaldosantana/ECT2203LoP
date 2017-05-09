@@ -220,6 +220,56 @@ Veja:
 
 * https://p5js.org/reference/#/p5/keyIsDown.
 
+Vejamos agora mais algumas aplicações da função random().
+```javascript
+var yo, xo;
+
+function setup() {
+  createCanvas(512, 512);
+  yo = random(512); 
+  xo = random(512);
+}
+
+function draw() {
+  background(0);
+  
+  if(mouseIsPressed) {
+		yo = random(512);
+		xo = random(512);
+  }
+  
+  rect(xo,yo,40,40);
+}
+```
+
+Neste código, a função foi utilizada para definir uma posição aleatória para um retangulo, dentro do nosso canvas, sempre que o botão do mouse for pressionado. Poderiamos também definir a posição do retangulo para fora do canvas, e faze-lo aparecer utilizando o sistema de movimentação que já vimos antes.
+
+```javascript
+var yo, xo;
+
+function setup() {
+   createCanvas(512, 512);
+   yo = random(512); 
+   xo = -random(512);
+}
+
+function draw() {
+   background(0);
+  
+   xo += 10;
+  
+   if(xo > width) {
+     yo = random(512);
+     xo = -random(512); 
+   }
+  
+   rect(xo,yo,40,40);
+   ellipse(x, y, 50, 50);
+}
+```
+Note que após o retangulo sair da área do nosso canvas, devemos definir as posições novamente, para que ele volte a aparecer no começo da tela.
+
+
 Por enquanto, pode parecer que não fizemos algo muito interessante, mas essa é só uma base para que você possa criar coisas incríveis. Para isso, basta praticar os conceitos aqui mostrados e juntar-los ao que vocè aprender em suas pesquisas futuras. Um ótimo lugar para expandir seu conhecimento sobre esse assunto é o próprio site do Processing. Divirta-se!
 
 Saiba mais em: 
