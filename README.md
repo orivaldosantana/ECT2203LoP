@@ -45,8 +45,9 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 * 27/04/2017 - [Laço Contado II,  Algoritmos Tradicionais](https://goo.gl/CVSzoM) 
 * 02/05/2017 - [Laço contado III, Algoritmo do trono](https://goo.gl/sKaF2Y)
 * 04/05/2017 - [Laço contado IV, Exercícios](https://goo.gl/YrsRKs) 
-* 09/05/2017 - [Vetores I](https://goo.gl/EkPNSL)
+* 09/05/2017 - [Vetor I](https://goo.gl/EkPNSL)
 * 11/05/2017 - [Vetor II, Estrutura de dados, Ordenação](https://goo.gl/QKA25B)
+* 16/05/2017 - [Vetor III, Exercícios](https://goo.gl/u5OKnH)
 
 
 ## Convertendo
