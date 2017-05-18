@@ -353,9 +353,9 @@ function setup() {
 function draw() {
   background(0);
   
-  textSize(14);
+  textSize(14); // define o tamanho da fonte
   fill(255); 
-  text("Ja passaram " + contagem + " bolas.", 250, 15);
+  text("Ja passaram " + contagem + " bolas.", 250, 15); // escreve na tela, note que podemos imprimir o valor de variáveis.
   
   if (posX < 640){
 	posX = posX + 15;
@@ -370,6 +370,37 @@ function draw() {
 Saída: 
 
 ![Elipse](codigos/figuras/figura7.png)
+
+Outra função bastante utilizada é a dist(x1, y1, x2, y2), que retorna a distancia entre duas posições informadas. Podemos utiliza-la de diversas formas, veremos um exemplo aqui.
+
+``` javascript
+var x1 = 10;
+var y1 = 90;
+
+function setup(){
+	createCanvas(500, 420);
+}
+
+function draw() {
+  background(200);
+  fill(0);
+
+  var x2 = mouseX;
+  var y2 = mouseY;
+
+  line(x1, y1, x2, y2);
+  ellipse(x1, y1, 7, 7);
+  ellipse(x2, y2, 7, 7);
+
+  var d = int(dist(x1, y1, x2, y2));
+  textSize(20);
+  text("A distancia entre os pontos é " + d + " pixeis.", 80, 400);
+}
+```
+
+Saída: 
+
+![Elipse](codigos/figuras/figura8.png)
 
 Por enquanto, pode parecer que não fizemos algo muito interessante, mas essa é só uma base para que você possa criar coisas incríveis. Para isso, basta praticar os conceitos aqui mostrados e juntar-los ao que vocè aprender em suas pesquisas futuras. Um ótimo lugar para expandir seu conhecimento sobre esse assunto é o próprio site do Processing. Divirta-se!
 
