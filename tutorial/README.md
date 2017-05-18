@@ -339,6 +339,38 @@ function draw() {
 
 Aqui a variável de estado é podeMudar. O programa funciona da seguinte forma: quando o mouse é clicado, uma posição é definida para o retângulo que logo então começará a andar para a direita, uma vez em movimento, o clique do mouse não conseguirá mais mudar sua posição até que ele saia da área do canvas. Assim, quando o retângulo estiver fora de vista, podeMudar é verdadeira e a posição poderá ser alterada com um clique do mouse, mas uma vez em movimento, até que o retângulo saia de vista novamente, podeMudar será falsa e o clique do mouse não funcionará. 
 
+Em alguns casos, precisaremos escrever algo na nossa tela, podemos fazer isso usando a função text(), desse modo:
+
+```javascript
+var posX, posY;
+var contagem = 0;
+function setup() {
+  createCanvas(640, 480);
+  posX = 0;
+  posY = 200;
+}
+
+function draw() {
+  background(0);
+  
+  textSize(14);
+  fill(255); 
+  text("Ja passaram " + contagem + " bolas.", 250, 15);
+  
+  if (posX < 640){
+	posX = posX + 15;
+  }else{
+	contagem++;
+	posX = 0;
+  }
+  ellipse(posX, posY, 50, 50);
+}
+```
+
+Saída: 
+
+![Elipse](codigos/figuras/figura7.png)
+
 Por enquanto, pode parecer que não fizemos algo muito interessante, mas essa é só uma base para que você possa criar coisas incríveis. Para isso, basta praticar os conceitos aqui mostrados e juntar-los ao que vocè aprender em suas pesquisas futuras. Um ótimo lugar para expandir seu conhecimento sobre esse assunto é o próprio site do Processing. Divirta-se!
 
 Saiba mais em: 
