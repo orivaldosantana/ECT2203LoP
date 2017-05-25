@@ -116,6 +116,12 @@ Tutorial demonstrando como usar as principais funções relacionadas ao trabalho
 
 * Phaser, https://phaser.io/
 
+### Sprites para Jogos 
+
+* *Game Art 2D*, http://www.gameart2d.com/freebies.html
+* *Open Game Arte*, https://opengameart.org/ 
+* *Spriters Resource*, https://www.spriters-resource.com/ 
+
 ## Dicas
 
 * Como resolver o problema de incompatibilidade de acentos em páginas HTML, <https://wiki.locaweb.com.br/pt-br/Como_resolver_problemas_de_acentua%C3%A7%C3%B5es_em_seu_site>
