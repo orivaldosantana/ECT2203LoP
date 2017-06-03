@@ -402,7 +402,7 @@ Saída:
 
 ![Elipse](codigos/figuras/figura8.png)
 
-Vejamos agora como utilizar vetores nesse contexto...
+Vejamos agora como utilizar vetores de uma forma bem legal...
 
 ```javascript
 var tam = 10;
