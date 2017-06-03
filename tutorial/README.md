@@ -402,6 +402,52 @@ Saída:
 
 ![Elipse](codigos/figuras/figura8.png)
 
+Vejamos agora como utilizar vetores nesse contexto...
+
+```javascript
+var tam = 10;
+var vX = [];
+var vY = [];
+var vV = [];
+var vTam = [];    
+var qt = 40; 
+// os códigos de "setup" só executam uma vez 
+function setup() {
+   createCanvas(640, 480); 
+   frameRate(30);   
+   for (i = 0; i < qt; i++) {
+       	vX[i] = random(0,width);
+	vY[i] = random(0,height); 
+	vV[i] = 2+random(0,10)/10; 
+	vTam[i] = random(2,4); 
+   } 
+}
+
+// os códigos de "draw" executam constantemente 
+function draw() {
+  background(0); 
+
+  // desenha objetos 
+  for(i = 0; i < qt; i++) {
+	rect(vX[i],vY[i],vTam[i],vTam[i])
+  }
+  
+  // movimenta objetos 
+  for(i = 0; i < qt; i++) { 
+	vY[i] = vY[i] + vV[i]; 
+	if (vY[i] > height) {
+	   vX[i] = random(0,width);
+	   vY[i] = -random(0,height); 		  
+	}
+  }
+}
+```
+Aqui, usamos os vetores vX, vY, vV e vTam para criar varios objetos na tela, guardando cada caracteristica de cada objeto em um vetor diferente. Note que para juntar essas informações usamos o índice de cada objeto, por exemplo, o primeiro objeto será de índice 0, então suas coordenadas estarão em vX[0] e vY[0], seu tamanho em vTam[0] e sua velocidade em vV[0]. Isso ocorrerá para todos os outros objetos, sendo assim, para acessar todos os indices, sempre utilizamos um laço *for*.
+
+Resultado:
+
+![Elipse](codigos/figuras/figura9.png)
+
 Por enquanto, pode parecer que não fizemos algo muito interessante, mas essa é só uma base para que você possa criar coisas incríveis. Para isso, basta praticar os conceitos aqui mostrados e juntar-los ao que vocè aprender em suas pesquisas futuras. Um ótimo lugar para expandir seu conhecimento sobre esse assunto é o próprio site do Processing. Divirta-se!
 
 Saiba mais em: 
