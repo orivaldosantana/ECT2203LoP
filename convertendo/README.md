@@ -1,6 +1,7 @@
 # JavaScript
 
-Esta página trata da conversão das instruções de algoritmos vistos em aula para a linguagem JavaScript. Logo, para cada instrução de um algoritmo será apresentada seu equilavente em JavaScript.
+Guia rápido de uso de JavaScript para a disciplina de Lógica de Programação.
+
 
 ## Comandos de Entrada
 
@@ -66,45 +67,45 @@ Dica, você pode concatenar (juntar) textos, textos e números com o operador +
 * Função lógica E de a e b: `a && b`
 * Função lógica de NEGAÇÂO de a: ` ! a`
 
-## Estruturas Condicionais 
+## Estruturas Condicionais
 
-### Estrutura Condicional Simples 
+### Estrutura Condicional Simples
 
 Se **expresão lógica** for verdadeira então execute os **comandos**
 ```JavaScript
 if ( expressão ) {
-  // comandos 
+  // comandos
 }
 ```
 ### Estrutura Condicional Composta
 
-*Se* **expresão lógica** for verdadeira então execute os **comandos**, *caso contrário* execute **outros comandos** 
+*Se* **expresão lógica** for verdadeira então execute os **comandos**, *caso contrário* execute **outros comandos**
 ```JavaScript
 if ( expressão ) {
-  // comandos 
+  // comandos
 }
 else {
-  // outros comandos 
+  // outros comandos
 }
-``` 
-## Estruturas de Repetição 
+```
+## Estruturas de Repetição
 
 ### Laço *while*
 
-* *Enquanto* **expressão lógica** for verdeira execute os **comandos**. 
+* *Enquanto* **expressão lógica** for verdeira execute os **comandos**.
 ```JavaScript
 while ( expressão ) {
-  // comandos 
+  // comandos
 }
 ```
 
-### Laço *do while* 
+### Laço *do while*
 
-* Execute os **comandos**, *Enquanto* **expressão lógica** for verdeira. 
+* Execute os **comandos**, *Enquanto* **expressão lógica** for verdeira.
 ```JavaScript
-do { 
-  // comandos 
-} while ( expressão ); 
+do {
+  // comandos
+} while ( expressão );
 ```
 
 
