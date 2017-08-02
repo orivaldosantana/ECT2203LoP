@@ -402,6 +402,140 @@ Saída:
 
 ![Elipse](codigos/figuras/figura8.png)
 
+Vejamos agora como utilizar vetores de uma forma bem legal...
+
+```javascript
+var tam = 10;
+var vX = [];
+var vY = [];
+var vV = [];
+var vTam = [];    
+var qt = 40; 
+// os códigos de "setup" só executam uma vez 
+function setup() {
+   createCanvas(640, 480); 
+   frameRate(30);   
+   for (i = 0; i < qt; i++) {
+       	vX[i] = random(0,width);
+	vY[i] = random(0,height); 
+	vV[i] = 2+random(0,10)/10; 
+	vTam[i] = random(2,4); 
+   } 
+}
+
+// os códigos de "draw" executam constantemente 
+function draw() {
+  background(0); 
+
+  // desenha objetos 
+  for(i = 0; i < qt; i++) {
+	rect(vX[i],vY[i],vTam[i],vTam[i])
+  }
+  
+  // movimenta objetos 
+  for(i = 0; i < qt; i++) { 
+	vY[i] = vY[i] + vV[i]; 
+	if (vY[i] > height) {
+	   vX[i] = random(0,width);
+	   vY[i] = -random(0,height); 		  
+	}
+  }
+}
+```
+Aqui, usamos os vetores vX, vY, vV e vTam para criar varios objetos na tela, guardando cada caracteristica de cada objeto em um vetor diferente. Note que para juntar essas informações usamos o índice de cada objeto, por exemplo, o primeiro objeto será de índice 0, então suas coordenadas estarão em vX[0] e vY[0], seu tamanho em vTam[0] e sua velocidade em vV[0]. Isso ocorrerá para todos os outros objetos, sendo assim, para acessar todos os indices, sempre utilizamos um laço *for*.
+
+Resultado:
+
+![Elipse](codigos/figuras/figura9.png)
+
+Agora vamos aprender a usar imagens no nosso projeto!
+
+```javascript
+var img;
+
+function preload() {
+   img = loadImage("figuras/Andando/Andando (0).png");
+}
+
+function setup() {
+   createCanvas(640, 640);
+}
+
+function draw() {
+   image(img,0,0); 
+}
+```
+Aqui vemos uma demonstração de como chamar uma imagem, coloca-la em uma variável e depois fazer uso dela. Primeiro criaremos uma variável para guardar a imagem, depois usamos a função loadImage() e, passando o caminho da imagem como um parâmetro, carregamos a imagem como o valor da variável. Por ultimo, basta usar a função image([variável que guarda a imagem], [coordenada x], [coordenada y]) para  mostrar na tela. Note que usamos o loadImage() no preload(), pois este é executado antes de qualquer outra coisa, evitando que alguma parte do código tente usar a imagem sem ela ter sido carregada ainda, garantindo o bom funcionamento do programa.
+
+Agora vamos ver o conceito de animações, que nada mais é que várias imagens sendo trocadas em sequência. Vejamos um exemplo.
+
+```javascript
+var imgs = [];
+var cont = 0;
+
+
+function preload() {
+  for (i=0; i<20; i++) {
+      imgs[i] = loadImage("figuras/Andando/Andando ("+i+").png");
+  }
+}
+function setup() {
+    frameRate(30);	
+    createCanvas(640, 640);
+}
+function draw() {
+    clear(); 
+    image(imgs[ cont ],0,0); 
+    cont++;
+    if (cont >= 20 ) {
+       	cont = 0; 
+    }
+}
+```
+
+Aqui, colocamos varias imagens em sequência dentro de um vetor, depois, no draw() mostramos elas uma por vez, trocando de imagem sequencialmente. Uma vez que elas são trocadas com uma frequência alta, nós temos a sensação visual de movimento, e é assim fazemos uma animação.
+
+Agora vamos incrementar essa sensação de movimento.
+
+```javascript
+var imgs = [];
+var cont = 0;
+var xp = 500; 
+
+function preload() {
+
+  for (i=0; i<20; i++) {
+	imgs[i] = loadImage("figuras/Andando/Andando ("+i+").png");
+  }
+}
+function setup() {
+    frameRate(30);	
+    reateCanvas(640, 640);
+}
+
+function andar_esquerda(){ 
+    xp = xp - 30; 
+    cont++;
+    if (cont >= 20 ) {
+    	cont = 0; 
+    }
+    if ( xp < -imgs[cont].width )
+    	xp = width; 
+		
+}
+
+function draw() {
+    background(255); 
+    imageMode(CENTER);  
+    image(imgs[ cont ],xp,height/2); 
+
+    if (keyIsDown(LEFT_ARROW) ) {
+	andar_esquerda(); 
+     }
+}
+```
+Nesse código as imagens só são trocadas enquanto o boneco se movimenta para a esquerda, dando a impressão de caminhada ou corrida. Colocando o incremento da imagem na função de andar, a realidade da animação foi pode ser bastante aumentada.
+
 Por enquanto, pode parecer que não fizemos algo muito interessante, mas essa é só uma base para que você possa criar coisas incríveis. Para isso, basta praticar os conceitos aqui mostrados e juntar-los ao que vocè aprender em suas pesquisas futuras. Um ótimo lugar para expandir seu conhecimento sobre esse assunto é o próprio site do Processing. Divirta-se!
 
 Saiba mais em: 
