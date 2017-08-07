@@ -4,7 +4,7 @@
 
 * [Q5] Escreva um programa que recebe a altura em metros e a massa em quilos de uma pessoa e calcula seu Índice de Massa Corporal (IMC).
 
-* [Q9] Implemente um programa que calcula o volume V e a área A da superfície de um tronco de cone de raios a, b e altura h (expressos em valores reais). Considere π = 3.14159265.
+* [Q9] Implemente um programa que calcula o volume V e a área A da superfície de um tronco de cone de raios a, b e altura h (expressos em valores reais). Considere pi = 3.14159265.
  * Dicas: Use as funções _raizQuadrada(x)_ e _pontencia(base,expoente)_.
 
 
