@@ -17,7 +17,11 @@ function potencia(b,e){
 	return Math.pow(b,e); 
 }
 function divisaoInteira(x,y) {
-	return Math.floor(x/y);
+	d = Math.floor(x/y);
+	if ( d > 0)
+		return Math.floor(x/y);
+	else
+		return Math.ceil(x/y);
 }
 
 // Retorna um  número inteiro entre min (incluso) e max (incluso)
