@@ -424,7 +424,7 @@ Saída:
 ![Elipse](codigos/figuras/figura8.png)
 
 
-Adicionando uma musica ao seu código 
+Adicionando uma musica ao seu código:
 
 
 ```  html
@@ -448,9 +448,9 @@ Adicionando uma musica ao seu código
 	
 ```
 Foi adicionado uma linha de código com:
-	
+```	
 <embed name="musica" src="musica.mp3" loop="true" hidden="true" autostart="true">
-
+```
 Isso permite que importemos o arquivo "musica.mp3" do nosso diretório;
 
 também podemos importar uma musica da web utilizando endereço URL da musica, por exemplo:
