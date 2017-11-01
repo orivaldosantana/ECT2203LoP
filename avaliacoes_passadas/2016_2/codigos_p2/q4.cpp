@@ -6,7 +6,7 @@ int main()
 {
 	float qtHabitantes =1000;
 	int filhos, contMenor = 0;
-	float salario, somaSalario, maiorSalario;
+	float salario, somaSalario, maiorSalario = 0;
 	float somaFilhos; 
 	for (int i=0; i < qtHabitantes; i++) {
 		cout << " Entre com o número de filhos: "; 
