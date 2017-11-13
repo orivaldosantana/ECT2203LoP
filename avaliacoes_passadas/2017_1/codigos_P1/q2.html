@@ -1,0 +1,22 @@
+<script src="ect.js"></script>
+
+<script>
+  
+a = lerReal("Entre com um número a");
+b = lerReal("Entre com um número b");
+n = lerReal("Entre com um número");
+auxiliar = a;
+if ( b < a ){
+	a = b;
+	b = auxiliar;
+} 
+contador = 1;
+multiplo = n*contador;
+while ( multiplo <= b ) {
+	if ( multiplo >= a )
+		escreva(multiplo+" ")
+	contador++;
+	multiplo=n*contador;
+}
+
+</script>

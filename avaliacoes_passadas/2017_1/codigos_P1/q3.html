@@ -1,0 +1,36 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="ect.js"></script>
+<script>
+
+ opcao = "X";
+contTotal = 0; 
+contE = 0; 
+contD = 0; 
+contM = 0; 
+while ( opcao != "S" ) {
+	if ( opcao == "E" ) {
+		contE++;
+		contTotal++;
+	}
+	if ( opcao == "D" ) {
+		contD++;
+		contTotal++;
+	}
+	if ( opcao == "M" ) {
+		contM++;
+		contTotal++;
+	}
+	opcao = lerTexto("Entre com uma opção: \n S - Sair;\n E - Engenharia;\n D - Direito;\n M - Medicina; "); 
+	while ( ! (opcao == "S" || opcao == "E" || opcao == "D" || opcao == "M" )) {
+		opcao = lerTexto("Opção inválida, digite outra opção:"); 
+	} 
+	 
+} 
+escreva("Total de entrevistados: "+contTotal+"\n"); 
+if (contTotal == 0)
+    contTotal = 1;
+escreva("Engenharia: "+(contE/contTotal)*100+"%\n Direito: "+(contD/contTotal)*100+"%\n Medicina: "+(contM/contTotal)*100 + "%"); 
+
+</script>
+
+

@@ -1,0 +1,19 @@
+<script src="ect.js"></script>
+<script>
+	N = [];
+	V = [];
+	vetorN = "";
+	vetorV = "";
+	tamanho = 40; 
+	for (i = 0; i < tamanho;i++){
+		N[i] = lerInteiro("Entre com o valor:");
+		V[tamanho-i-1] = N[i];
+	}
+	for (i = 0; i < tamanho;i++){
+		vetorN = vetorN+N[i]+" ";
+		vetorV = vetorV+V[i]+" ";
+	}
+	escreva(vetorN+"\n"+vetorV);
+</script>
+
+

@@ -1,0 +1,30 @@
+<script src="ect.js"></script>
+<script>
+var codigo = [];
+var preco = [];
+var contador = 0;
+var todos = "";
+var N = lerInteiro("Entre com a quantidade de produtos:");
+for (i = 0;i < N;i++){
+	codigo[i] = lerInteiro("Entre com o código do produto:");
+	preco[i] = lerReal("Entre com o preço do produto:");
+}
+var menorPreco = preco[0];
+var menorCodigo = codigo[0];
+
+for (i = 0;i < N;i++){
+	if ( preco[i] < menorPreco){
+		mp = preco[i];
+		menorCodigo = codigo[i]
+		
+	}
+	if (preco[i] > 1000){
+		contador++;
+	}
+	todos = todos+codigo[i]+"  Preço: R$ "+preco[i]+";\n";	
+}
+escreva("Produto com menor preço: "+menorCodigo+"\nQuantidade de produtos com preço acima de 1000 : "+contador+"\n"+todos);
+
+</script>
+
+

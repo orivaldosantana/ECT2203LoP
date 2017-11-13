@@ -1,0 +1,22 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="ect.js"></script>
+<script>
+
+ 	resposta = "s";  
+	while (resposta != "n") {
+		populacaoA = lerReal("Entre com a população de A:");
+		populacaoB = lerReal("Entre com a população de B:");
+		taxaA = lerReal("Entre com a taxa de crescimento populacional de A:");
+		taxaB = lerReal("Entre com a taxa de crescimento populacional de B:");
+		contador = 0;
+		while ( populacaoA <= populacaoB ) {
+			populacaoA = populacaoA + populacaoA*taxaA; 
+			populacaoB = populacaoB + populacaoB*taxaB; 
+			contador++; 
+		}
+		escreva(contador+" anos\n"); 
+		resposta = lerTexto("Desja continuar (s - sim / n - não)")   
+	}
+</script>
+
+

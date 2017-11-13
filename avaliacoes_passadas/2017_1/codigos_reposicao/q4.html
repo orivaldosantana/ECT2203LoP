@@ -1,0 +1,21 @@
+<script src="ect.js"></script>
+<script>
+	var soma = 0;	
+	var X,Y;
+	X = lerInteiro("Entre com o valor de X:");
+	while (X < 0){
+		X = lerInteiro("Entre com o valor de X:");
+	}
+	Y = lerInteiro("Entre com o valor de Y:");
+	while (Y < 0){
+		Y = lerInteiro("Entre com o valor de Y:");
+	}
+	for ( i = X;i <= Y;i++){
+		if ( i%2 == 0){
+			soma = soma+i;
+		}	
+	}
+	escreva(soma);
+</script>
+
+

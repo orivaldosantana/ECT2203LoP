@@ -1,0 +1,109 @@
+ 
+<script>
+	
+	/*********************************************************************/
+	/**                        QUESTÃO 1                                **/
+	/*********************************************************************/
+ 
+		//----------------- Conteúdo da questão 1 ------------------//
+		var n = lerInteiro("Entre com um número inteiro: ");
+		var m;
+		var texto = "";
+		while(n<=2 || n>=1000){
+			n = lerInteiro("Número inválido. Entre com outro número inteiro: ");
+		}
+		for(i=1 ; i<=10 ; i++){
+			m = n*i
+			texto = texto + i+"*"+n+" = "+m+"\n";
+		}
+		escreva(texto);
+
+		//--------------------------------------------------------//
+ 
+	/*********************************************************************/
+	/**                        QUESTÃO 2                                **/
+	/*********************************************************************/
+ 
+		//----------------- Conteúdo da questão 2 ------------------//
+		var x = lerInteiro("Entre com um número inteiro: ");
+		var texto = "";
+		while(x!=0){
+			for(i=1 ; i<=x; i++){
+				texto = texto+i+" ";
+			}
+			escreva(texto+"\n")
+			x = lerInteiro("Entre com um número inteiro (digite 0 para sair): ");
+			texto = "";
+		}
+		//--------------------------------------------------------//
+ 
+	/*********************************************************************/
+	/**                        QUESTÃO 3                                **/
+	/*********************************************************************/
+ 
+		//----------------- Conteúdo da questão 3 ------------------//
+
+		var texto = "";
+		for(i=1 ; i<=9; i+=2){
+			for(j=1 ; j<=3 ; j++){
+				texto = texto+"I = "+i+" J = "+j+"\n";
+			}
+		}
+		escreva(texto);
+
+		//----------------------------------------------------------//
+ 
+	/*********************************************************************/
+	/**                        QUESTÃO 4                                **/
+	/*********************************************************************/
+ 
+		//----------------- Conteúdo da questão 4 ------------------//
+
+		X = [];
+		X[0] = 0;
+		X[1] = 1;
+		N = lerInteiro ("Entre com o  N-ésimo valor correspondente a sequência de Fibonacci, sendo (0 ≤ N ≤ 60)");
+		for(var i=2; i<=N; i++){
+			X[i] = X [i-2] + X [i-1] 	
+		}
+		escreva ("Fib("+N+") = "+X[N]);
+		
+		//--------------------------------------------------------//
+ 
+	/*********************************************************************/
+	/**                        QUESTÃO 5                                **/
+	/*********************************************************************/
+ 
+		//----------------- Conteúdo da questão 5 ------------------//
+		var cpf = [];
+		var salario = [];
+		var soma = 0;
+		var media;
+		var trono = -1;
+		var texto = "";
+		var cont = 0;
+		var percentual;
+		var qtPessoas = 10; 
+		for(i=1 ; i<=qtPessoas ; i++){
+			cpf[i] = lerInteiro("Entre com o CPF da "+i+"ª pessoa: ");
+			salario[i] = lerReal("Entre com o sálario da "+i+"ª pessoa: ");
+			soma = soma + salario[i];
+		}
+		media = soma/qtPessoas;
+		for(i=1 ; i<=qtPessoas; i++){
+			if(salario[i]>=trono){
+				trono = salario[i];
+				texto = "O CPF e o salário da pessoa de maior salário é:"+cpf[i]+" e R$"+salario[i];
+			}
+			if(salario[i]<media){
+				cont++;
+			}
+		}
+		percentual = (cont/10)*100;
+		escreva("A média do salário é: R$"+media+"\n"+texto+"\nO percentual de pessoas com salário abaixo da média é: "+percentual+"%");  
+		//--------------------------------------------------------//
+
+	
+</script>
+
+

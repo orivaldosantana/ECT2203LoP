@@ -1,0 +1,109 @@
+<script>
+	
+	/*********************************************************************/
+	/**                        QUESTÃO 1                                **/
+	/*********************************************************************/
+	
+		//----------------- Conteúdo da questão 1 ------------------//
+		x = lerInteiro("quantidade de numeros: ");
+		resposta = ""; 
+		for(i = 1; i <= x; i++){
+			n = lerInteiro("digite um numero: ");
+			if(n == 0){
+				resposta +=  "NULL\n";
+			}
+			else  {
+			
+				if(n%2 == 0){
+					resposta +=  "EVEN ";
+				}
+				else 
+					resposta +=  "ODD ";
+				if(n < 0 ){
+					resposta += "NEGATIVE\n";
+				}
+				else 
+					resposta += "POSITIVE\n";
+			  
+			}
+		}	
+		escreva(resposta);		
+		//--------------------------------------------------------//
+ 
+	/*********************************************************************/
+	/**                        QUESTÃO 2                                **/
+	/*********************************************************************/
+ 
+		//----------------- Conteúdo da questão 2 ------------------//
+		var a, b;
+		var resposta = "";  
+		for(i=0; i<=2; i=i+0.2) {
+			for(j=1; j<=3; j++) {
+				a = i;
+				b = j + i;
+				resposta += "I = "+a+" J = "+b+"\n"; 
+			}
+		}
+		escreva(resposta);
+		//--------------------------------------------------------//
+ 
+	/*********************************************************************/
+	/**                        QUESTÃO 3                                **/
+	/*********************************************************************/
+	 
+		//----------------- Conteúdo da questão 3 ------------------//
+		var n, a, b, c;
+		n = lerInteiro("Entre com um número: "); 
+		resposta = ""; 
+		for(i=1; i<=n; i++) {
+			a = i;
+			b = Math.pow(i,2); 
+			c = Math.pow(i,3);
+			resposta += a+" "+b+" "+c+"\n";
+			resposta += a+" "+(b+1)+" "+(c+1)+"\n";
+		}
+		escreva(resposta); 
+		//--------------------------------------------------------//
+ 
+	/*********************************************************************/
+	/**                        QUESTÃO 4                                **/
+	/*********************************************************************/
+ 
+		//----------------- Conteúdo da questão 4 ------------------//
+		var n = [], v = [];
+
+		for(i=0; i<20; i++) {
+			n[i] = lerInteiro("Entre com um elemento referente ao índice "+i+" do vetor v");
+			v[19-i] = n[i];
+		}
+		escreva(v);
+		//--------------------------------------------------------//
+ 
+	/*********************************************************************/
+	/**                        QUESTÃO 5                                **/
+	/*********************************************************************/
+ 
+		//----------------- Conteúdo da questão 5 ------------------//
+		var vendas = [], media = 0, maiorVenda = -1000, maiorMes, contMaiores = 0;
+		for(i=0; i<12; i++) {
+			vendas[i] = lerReal("Entre com o volume de vendas do mês "+i);
+			media += vendas[i]; 
+			if(vendas[i]>maiorVenda) { 
+				maiorMes = i+1;
+				maiorVenda = vendas[i]
+			}
+		}
+		media = media/12;
+		for(i=1; i<=12; i++) {
+			if(vendas[i]>media){
+				contMaiores++; 
+			}
+		} 
+		escreva("Média: "+media+"\nMês com maior volume de vendas: "+maiorMes+"\nQuantidade de meses que ultrapassaram a média anual: "+contMaiores);
+		//--------------------------------------------------------//
+ 
+ 
+	
+</script>
+
+

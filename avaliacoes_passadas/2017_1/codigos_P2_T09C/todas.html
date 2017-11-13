@@ -1,0 +1,135 @@
+
+<script>
+	
+	/*********************************************************************/
+	/**                        QUESTÃO 1                                **/
+	/*********************************************************************/
+ 
+		//----------------- Conteúdo da questão 1 ------------------//
+		resposta = ""; 
+		for(m=0; m<=100; m++)
+		{
+			if(m%5==0 && m!=0)
+			{
+				resposta +=  m + " "; 
+			}
+		}
+		escreva(resposta)
+		//--------------------------------------------------------//
+ 
+	/*********************************************************************/
+	/**                        QUESTÃO 2                                **/
+	/*********************************************************************/
+ 
+		//----------------- Conteúdo da questão 2 ------------------//
+
+		A = lerReal("informe o menor valor A");
+		B = lerReal("informe o maior valor B");
+		resposta = ""; 
+		for (i = A; i <= B; i++) {		
+			resposta += i + " "; 
+		}
+		escreva(resposta); 
+
+		//--------------------------------------------------------//
+ 
+	/*********************************************************************/
+	/**                        QUESTÃO 3                                **/
+	/*********************************************************************/
+ 
+		//----------------- Conteúdo da questão 3 ------------------//
+
+		cont = 0;
+		A = [];
+		for(i=0; i<5; i++)
+		{
+			A[i] = lerInteiro("digite o numero da posicao "+i);
+			if (A[i]%2==0 && A[i]!=0)
+			{
+				cont++;
+			}
+		}
+		escreva(cont + " valores pares.");
+
+		//----------------------------------------------------------//
+ 
+	/*********************************************************************/
+	/**                        QUESTÃO 4                                **/
+	/*********************************************************************/
+ 
+		//----------------- Conteúdo da questão 4 ------------------//
+		x = lerInteiro("digite o valor de X");
+		y = lerInteiro("digite o valor de Y");
+		soma = 0; 
+		if (x > y) {
+			aux = x; 
+			x = y; 
+			y = aux; 			
+		}
+		for (i = x+1; i < y; i++) {
+			if ( i % 2 != 0 ) {				
+				soma = soma + i; 
+			}
+			
+		}
+		escreva(soma); 
+		
+		//--------------------------------------------------------//
+ 
+	/*********************************************************************/
+	/**                        QUESTÃO 5                                **/
+	/*********************************************************************/
+ 
+		//----------------- Conteúdo da questão 5 ------------------//
+		var num=[];
+		var x=0; 
+		var i; 
+		var resposta = "";
+		x=lerInteiro("Informe um nuemro inteiro positivo menor que 50: ");		
+		for(i=0;i<10;i++){
+			num[i]=x;
+			x=x*2;
+			resposta += "V["+i+"] = "+num[i]+"\n";
+		}
+		escreva(resposta);
+		//--------------------------------------------------------//
+ 
+	/*********************************************************************/
+	/**                        QUESTÃO 6                                **/
+	/*********************************************************************/
+ 
+		//----------------- Conteúdo da questão 6 ------------------//
+		var preco=[]; 
+		var codigo=[];
+		var todos=""; 
+		var media; 
+		var maiorPreco;
+		var codigoMaiorPreco; 
+		var resultado = ""; 
+		var qt = lerInteiro("Informe o numero de produtos a serem catalogados: ");
+		for(i=0;i<qt;i++){
+			codigo[i]=lerReal("informe o codigo do produto "+(i+1)+": ");
+			preco[i]=lerReal("informe o preco do produto "+(i+1)+": ");
+		}
+		maiorPreco=preco[0];
+		media=preco[0];
+		for(i=1;i<qt;i++){
+			media = media + preco[i];	
+			if(preco[i]>maiorPreco){
+				maiorPreco=preco[i];
+				codigoMaiorPreco = codigo[i]; 
+			}
+		}
+		resultado += "O produto mais caro e: "+codigoMaiorPreco+"\n"; 
+		resultado += "A media de precos e: "+(media/qt)+"\n"; 
+		for(i=0;i<qt;i++){
+			resultado += "Codigo do produto: "+codigo[i]+" - Preco: "+preco[i]+"\n";
+		}
+		escreva(resultado);
+		//--------------------------------------------------------//
+ 
+
+	
+</script>
+
+

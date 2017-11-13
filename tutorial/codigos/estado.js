@@ -28,7 +28,7 @@ function draw() {
 	if (disparo) {
 		// movimenta o disparo / tiro 
 		xd = xd +5;
-		yd = 0.005*(xd - xdo)*(xd - 300);
+		yd = 0.005*(xd - xdo)*(xd - 500);
 		// se o disparo sumir na tela 
 		if (xd > width  || yd > 100) {
 			// habilida a ocorrência de um novo disparo 

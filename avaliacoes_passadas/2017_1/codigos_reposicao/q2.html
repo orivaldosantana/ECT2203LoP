@@ -1,0 +1,15 @@
+<script src="ect.js"></script>
+<script>
+	n = lerInteiro("Entre com N:");
+	var valor = lerReal("Entre com o numero:");
+	var maiorValor = valor;
+	for (i = 1;i < n;i++){
+		if ( valor > maiorValor){
+			maiorValor = valor;
+		}
+		valor = lerReal("Entre com o numero:");
+	}
+	escreva("O menor valor dado é : "+maiorValor); 
+</script>
+
+
