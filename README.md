@@ -23,7 +23,7 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 
 ## Aulas Práticas
 
-* [Intordução às Ferramentas](https://github.com/orivaldosantana/ECT2203LoP/tree/master/lab0)
+* [Introdução às Ferramentas](https://github.com/orivaldosantana/ECT2203LoP/tree/master/lab0)
 * [Expressões, variáveis, tipos de dados e entrada e saída](https://github.com/orivaldosantana/ECT2203LoP/tree/master/lab1)
 * [Estruturas condicionais](lab2/README.md)
 * [Estruturas de repetição condicionais](lab3/README.md)
@@ -31,7 +31,7 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 ## Slides de Aula
 
 * 14/02/2017 - [Apresentação e planejamento](https://goo.gl/kxjSEQ)
-* 16/02/2017 - [Algortitmos e Lógica](https://goo.gl/sy6eGC)
+* 16/02/2017 - [Algoritmos e Lógica](https://goo.gl/sy6eGC)
 * 21/02/2017 - [Representações de Algoritmos](https://goo.gl/Ci29jy)
 * 23/02/2017 - [Expressões, variáveis, tipos de dados, e entrada e saída](https://goo.gl/4dYfps)
 * 02/03/2017 - [Exercícios: Expressões, variáveis, tipos de dados, e entrada e saída](https://goo.gl/qXUcH8)
@@ -47,7 +47,7 @@ Página para apresentar os códigos do componente curricular ECT2203 - Lógica d
 * 06/04/2017 - [Repetição Condicional, Aplicações II](https://goo.gl/lTrXDQ)
 * 11/04/2017 - Revisão 
 * 18/04/2017 - Prova I, escrita 
-* 20/04/2017 - Espectativa de resposta da Prova I
+* 20/04/2017 - Expectativa de resposta da Prova I
 * 25/04/2017 - [Laço Contado I](https://goo.gl/Jnqz3c)
 * 27/04/2017 - [Laço Contado II,  Algoritmos Tradicionais](https://goo.gl/CVSzoM) 
 * 02/05/2017 - [Laço contado III, Algoritmo do trono](https://goo.gl/sKaF2Y)
@@ -65,7 +65,7 @@ O link a seguir apresenta uma página explicando como converter para JavaScript 
 
 Tutorial demonstrando como usar as principais funções relacionadas ao trabalho prático da Unidade III. 
 
-* [Clique aqui.](tutorial) 
+* [Clique aqui](tutorial) 
 
 ## Vídeos Motivacionais
 
@@ -94,6 +94,7 @@ Tutorial demonstrando como usar as principais funções relacionadas ao trabalho
 
 ### Online  
 
+* Plataforma para gerenciar listas de exercício da disciplina, <http://lop.ect.ufrn.br>
 * Editor Js Bin, <https://jsbin.com/>
 * Editor de códigos JS, <https://js.do>
 * Editor de códigos Repl, <https://repl.it/languages/javascript>
