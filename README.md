@@ -122,6 +122,7 @@ Tutorial demonstrando como usar as principais funções relacionadas ao trabalho
 * *Game Art 2D*, http://www.gameart2d.com/freebies.html
 * *Open Game Arte*, https://opengameart.org/ 
 * *Spriters Resource*, https://www.spriters-resource.com/ 
+* *Free Sprites*, http://millionthvector.blogspot.com/p/free-sprites_12.html
 
 ## Dicas
 
