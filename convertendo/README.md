@@ -4,22 +4,7 @@ Guia rápido de uso de JavaScript para a disciplina de Lógica de Programação.
 
 
 ## Comandos de Entrada
-
-Entre com um valor inteiro:
-```javascript
-valor = lerInteiro("Entre com um número inteiro: ");
-```
-
-Entre com um valor real:
-```javascript
-valor = lerReal("Entre com um número real: ");
-```
-
 Entre com um texto:
-```javascript
-nome = lerTexto("Entre com um nome: ");
-```
-ou
 ```javascript
 nome = prompt("Entre com um nome: ");
 ```
@@ -33,20 +18,28 @@ Convertendo de texto par real
 ```javascript
 numero = parseFloat(texto);
 ```
+
+Entre com um valor inteiro:
+```javascript
+valor = parseInt(prompt("Entre com um número inteiro: "));
+```
+
+Entre com um valor real:
+```javascript
+valor = parseFloat(prompt("Entre com um número real: "));
+```
+
 ## Comandos de Saída
 
 Escrevendo uma mensagem na tela:
-```javascript
-numero = escreva(texto);
-```
-ou
+ 
 ```javascript
 numero = alert(texto);
 ```
 
 Dica, você pode concatenar (juntar) textos, textos e números com o operador +
 ```javascript
-("O valor do número é "+variavelNumero)
+("O valor do número é " + variavelNumero)
 ```
 
 ## Operadores Aritméticos
@@ -106,6 +99,14 @@ while ( expressão ) {
 do {
   // comandos
 } while ( expressão );
+```
+### Laço *for*, uso básico 
+
+* *Para* o **contador** do valor inicial até o valor final, na **expressão**, execute os comandos e **incremente** o **contador**.  
+```
+for ( inicialização do contator ; expressão; incremento do contador ) {
+  // comandos
+}
 ```
 
 
