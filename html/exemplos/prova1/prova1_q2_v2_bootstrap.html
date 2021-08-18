@@ -1,0 +1,96 @@
+<html lang="pt-br">
+	<head>
+		<title>Prova 1 - Questao 2.v2</title>
+
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="ect.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+
+		<div class="jumbotron text-center">
+			<h1>Prova 1</h1>
+			<p>Questão 2 v2</p>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<!-- Enunciado da Questão -->
+					<div class="panel panel-default">
+						<div class="panel-heading">Enunciado</div>
+						<div class="panel-body">
+							<p>
+								Escreva um programa para encontrar e mostrar todos os múltiplos de um número <i>n</i>
+								contidos em um determinado intervalo fechado formado por <i>a</i> e <i>b</i>.
+								Os valores de <i>a</i>, <i>b</i> e <i>n</i> devem ser fornecidos pelo usuário.
+								O programa deve garantir que <i>a</i> deve ser menor que <i>b</i>.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<!-- Entrada de dados da Questão -->
+					<form>
+						<div class="form-group">
+							<label for="usr">Entre com <i>a</i>:</label>
+							<input type="text" class="form-control" name="va" value="">
+						</div>
+						<div class="form-group">
+							<label for="usr">Entre com <i>b</i>:</label>
+							<input type="text" class="form-control" name="vb" value="">
+						</div>
+						<div class="form-group">
+							<label for="usr">Entre com <i>n</i>:</label>
+							<input type="text" class="form-control" name="vn" value="">
+						</div>
+					</form>
+					<!-- Botão da questão / Chamada para executar o código -->
+					<p>
+						<button type="button" class="btn" onclick="multiplos()">Calcular múltiplos. </button>
+					</p>
+				</div>
+
+				<div class="col-sm-4">
+					<!-- Saída da Questão -->
+					<div class="panel panel-default">
+						<div class="panel-heading">Resultado:</div>
+						<div class="panel-body">
+							<p id="resultado">Resultado: </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Código da Questão -->
+		<script>
+			function multiplos() {
+				var a = lerInteiro("va");
+				var b = lerInteiro("vb");
+				var n = lerInteiro("vn");
+				var r = "Resultado: ";
+
+				auxiliar = a;
+				if (b < a) {
+					a = b;
+					b = auxiliar;
+				}
+				contador = 1;
+				multiplo = n * contador;
+				while (multiplo <= b) {
+					if (multiplo >= a)
+						r = r + " " + multiplo;
+					contador++;
+					multiplo = n * contador;
+				}
+				escreva("resultado", r);
+			}
+		</script>
+	</body>
+</html>
